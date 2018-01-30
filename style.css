@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+body{
+    background-image: url(resources/jnamiller.com-background2.png);
+    background-size: cover;
+}
+
+.container{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-gap: 10px;
+    grid-template-areas: "header"
+        "upbox"
+        "downbox"
+        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 25px 200px 350px 55px;
+}
+
+header{
+    grid-area: header;
+    margin: 0;
+    padding: 0;
+}
+
+.upbox{
+    grid-area: upbox;
+    justify-self: center;
+}
+
+.upbox img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 0 25px;
+}
+
+.desbox{
+    background-color: hsla(210, 60%, 60%, 0.7);
+    height: 200px;
+    width: 600px;
+    float: right;
+    box-sizing: border-box;
+    padding: 20px;
+    line-height: 1.5;
+    font-style: normal;
+}
+
+.downbox{
+    grid-area: downbox;
+    justify-self: center;
+}
+
+.downbox div{
+    margin: 25px 0;
+}
+
+.downbox h1{
+    margin: 0 0 10px 0;
+    text-decoration: underline;
+}
+
+.downbox h2{
+    margin: 0 0 0 0;
+    font-style: italic;
+}
+
+.sub-box{
+    height: 150px;
+    width: 600px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.skill{
+    background-color: hsla(45, 60%, 55%, 0.7);
+}
+
+.skill ul{
+    list-style-type: none;
+    float: left;
+    margin: 0 100px 0 0;
+    padding: 0;
+}
+
+.skill li{
+    float: left;
+}
+
+.skill li h2{
+    margin: 0 75px 0 0;
+    list-style-type: square
+}
+
+.con{
+    background-color: hsla(120, 40%, 45%, 0.7);
+}
+
+.con ul{
+    list-style-type: none;
+    float: left;
+    margin: 0;
+}
+
+.con ul li{
+    float: left;
+}
+
+.con ul li h3{
+    padding: 0 0 0 100px;
+    font-size: 1.5em;
+}
+
+footer{
+    grid-area: footer;
+    justify-self: center;
+    align-self: center;
+}
