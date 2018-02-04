@@ -3,54 +3,42 @@
     
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="normalize.css" type="text/css">
         <link rel="stylesheet" href="style.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet">
         <title>John's Web Portfolio</title>
     </head>
     
-    <body>
-        <div class="container">
-            <header>
-                <!--Put Nav here when applicable-->
-            </header>
+    <body class="grid">
+        
+        <header>
+            Header
+        </header>
 
-            <section class="upbox">
-                <div>
-                    <img src="resources/johnmillerphoto.jpg" alt="Photo of John Miller">
-                    <div class="desbox">
-                        <h2>Hey, I'm John!</h2>
-                        <br/>
-                        <h3>I live near Sacramento, California. I am a Novice programmer training to level up to Master. I love the challenge and constant learning that the trade offers. I am completely self-taught, and proud of it!</h3>
-                    </div>
-                </div>
-            </section>
-
-            <section class="downbox">
-                <div class="skill sub-box">
-                    <h1>Skills</h1>
-                    <ul>
-                        <li><h2>HTML</h2></li>
-                        <li><h2>CSS</h2></li>
-                    </ul>
-                </div>
-                <div class="con sub-box">
-                    <h1>Contact</h1>
-                    <ul>
-                        <li><h2>Email:</h2><li/>
-                        <li><h3>nicholimiller7@gmail.com</h3></li>
-                    </ul>
-                </div>
-            </section>
+        <main>
             
+        </main>
 
-            <footer>
-                <div>
-                    <p>John's Web Portfolio @ 2018</p>
-                </div>
-            </footer>
+        <section class="nested-grid">
+            <div class="skills box">
+                <h1>Skills</h1>
+                <p>I am proficient in HTML and CSS. Currently learning Git version control and JavaScript.</p>
+            </div>
+            <div class="github box">
+                Github
+            </div>
+            <div class="blog box">
+                <h1><a href="http://www.jnamiller.com/blog/">Blog</a></h1>
+            </div>
+            <div class="contact box">
+                <h1>Contact</h1>
+                <p>Email: nicholimiller7@gmail.com</p>
+            </div>
+        </section>
 
-        </div>
+        <footer>
+            Footer
+        </footer>
+
     </body>
     
 </html>
