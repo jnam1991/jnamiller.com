@@ -9,6 +9,10 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+:root {
+    --header-footer-banner: hsl(0, 25%, 5%);
+}
+
 body {
     text-align: center;
     background: hsl(0, 0%, 4%);
@@ -29,32 +33,43 @@ body {
 
 header {
     grid-area: header;
+    height: 75px;
+    background: var(--header-footer-banner);
+}
+
+nav ul {
+    display: flex;
+    height: 75px;
+    width: auto;
+}
+
+nav li {
     height: 50px;
-    background: hsl(0, 0%, 0%);
-    color: aliceblue;
+    min-width: 50px;
+    flex-grow: 1;
+    list-style-type: none;
+    align-self: center;
 }
 
 main {
     grid-area: main;
-    background-image: url(resources/jnamiller.com-background2.png);
+    background-image: url(resources/jnamiller.com-background4.png);
     height: 500px;
     background-size: cover;
 }
 
 section {
     grid-area: info;
-    
 }
 
 .nested-grid{
     display: grid;
     width: 100%;
-    margin: 100px 0;
+    margin-top: 75px;
     grid-gap: 75px;
     grid: repeat(2, auto) / repeat(2, auto);
     grid-template-areas: 
-        "skills github"
-        "blog contact";
+        "skills contact";
 }
 
 .box {
@@ -76,33 +91,19 @@ section {
     line-height: 2;
 }
 
-.github {
-    grid-area: github;
-}
-
 .blog {
-    grid-area: blog;
-}
-
-.blog a {
-    text-decoration: none;
-    color: black;
-}
-
-.blog a:hover {
-    color: darkblue;
-    text-decoration: underline;
+    font-size: 2rem;
 }
 
 .contact{
     grid-area: contact;
 }
 
-.skills, .blog {
+.skills{
     justify-self: right;
 }
 
-.github, .contact{
+.contact{
     justify-self: left;
 }
 
@@ -113,6 +114,5 @@ section {
 footer {
     grid-area: footer;
     height: 75px;
-    background: hsl(0, 0%, 0%);
-    color: aliceblue;
+    background: var(--header-footer-banner);
 }
