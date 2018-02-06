@@ -18,6 +18,22 @@ body {
     background: hsl(0, 0%, 4%);
 }
 
+h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+h2 {
+    color: darkgray;
+    font-size: 2rem;
+}
+
+p {
+    color: dimgray;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
 .grid {
     display: grid;
     width: 100%;
@@ -37,6 +53,10 @@ header {
     background: var(--header-footer-banner);
 }
 
+header a{
+    text-decoration: none;
+}
+
 nav ul {
     display: flex;
     height: 75px;
@@ -54,8 +74,24 @@ nav li {
 main {
     grid-area: main;
     background-image: url(resources/jnamiller.com-background4.png);
-    height: 500px;
+    height: auto;
     background-size: cover;
+}
+
+main img{
+    border-radius: 50%;
+    height: 16rem;
+    width: 16rem;
+    position: relative;
+    top: -2rem;
+}
+
+.about-box {
+    height: 300px;
+    width: 50%;
+    margin: 25px auto;
+    padding: 3rem;
+    background-color: hsla(0, 0%, 10%, 0.9);
 }
 
 section {
@@ -73,46 +109,36 @@ section {
 }
 
 .box {
-    height: 400px;
+    height: 300px;
     width: 500px;
     background: hsl(0, 0%, 7%);
-    border-radius: 10%;
+    border-radius: 5%;
     justify-self: center;
     padding: 30px;
 }
 
-.skills {
-    grid-area: skills;
-}
-
-.skills .contact, p {
-    margin-top: 25px;
-    font-size: 2rem;
-    line-height: 2;
-}
-
-.blog {
-    font-size: 2rem;
-}
-
-.contact{
-    grid-area: contact;
-}
-
 .skills{
+    grid-area: skills;
     justify-self: right;
 }
 
 .contact{
+    grid-area: contact;
     justify-self: left;
 }
 
-.skills, .contact h1 {
-    font-size: 2rem;
+.contact h2 {
+    text-align: left;
+    margin-top: 25px;
 }
 
 footer {
     grid-area: footer;
     height: 75px;
     background: var(--header-footer-banner);
+    padding: 25px;
+}
+
+footer p {
+    font-size: 1rem;
 }
