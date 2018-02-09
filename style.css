@@ -161,33 +161,21 @@ footer p {
     font-size: 1rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 965px) {
     
-    nav li h2{
-        font-size: 4rem;
-        margin-left: -50px; 
-    }
-    
-    nav  li img{
-        width: 22%;
-        margin-right: -50px;
-    }
-    
-    main img {
-        height: auto;
-        width: 40%;*/
-    }
-    
-    .about-box {
-        width: 65%;
+    .nested-grid {
+        grid-gap: 50px;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: auto;
+        grid-template-areas: 
+            "skills"
+            "contact";
     }
     
     .box {
-        width: 90%;
+        height: 100%;
+        width: 80%;
+        margin: auto;
     }
-
-}
-
-@media only screen and (max-width: 480px){
     
 }
