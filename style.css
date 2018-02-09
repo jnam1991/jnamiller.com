@@ -34,6 +34,7 @@ p {
     color: dimgray;
     line-height: 2;
     font-size: 1.5rem;
+    word-wrap: break-word;
 }
 
 .grid {
@@ -51,10 +52,10 @@ p {
 
 header {
     grid-area: header;
-    height: 75px;
+    height: auto;
     background: var(--header-footer-banner);
     box-sizing: border-box;
-    border-bottom: solid 3px var(--border-color);
+    border-bottom: solid 3px white;
 }
 
 header a{
@@ -63,13 +64,11 @@ header a{
 
 nav ul {
     display: flex;
-    height: 75px;
-    width: auto;
 }
 
 nav li {
-    height: 50px;
-    min-width: 50px;
+    padding: 1%;
+    width: 100%;
     flex-grow: 1;
     list-style-type: none;
     align-self: center;
@@ -77,9 +76,9 @@ nav li {
 
 main {
     grid-area: main;
-    background-image: url(resources/jnamiller.com-background4.png);
-    height: auto;
+    background-image: url(resources/background1.png);
     background-size: cover;
+    background-position: center;
 }
 
 main img{
@@ -95,7 +94,7 @@ main img{
     height: auto;
     width: 50%;
     margin: 50px auto;
-    padding: 2rem;
+    padding: 2%;
     background-color: hsla(0, 0%, 10%, 0.9);
     
 }
@@ -113,15 +112,15 @@ section {
     display: grid;
     width: 100%;
     margin: 75px auto;
-    grid-gap: 75px;
-    grid: auto / repeat(2, auto);
+    grid-gap: 10%;
+    grid: auto / repeat(2, 1fr);
     grid-template-areas: 
         "skills contact";
 }
 
 .box {
     height: auto;
-    width: 500px;
+    width: 80%;
     background: hsl(0, 0%, 7%);
     border-radius: 5%;
     justify-self: center;
@@ -160,6 +159,33 @@ footer {
 
 footer p {
     font-size: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    nav li h2{
+        font-size: 4rem;
+        margin-left: -50px; 
+    }
+    
+    nav  li img{
+        width: 22%;
+        margin-right: -50px;
+    }
+    
+    main img {
+        height: auto;
+        width: 40%;*/
+    }
+    
+    .about-box {
+        width: 65%;
+    }
+    
+    .box {
+        width: 90%;
+    }
+
 }
 
 @media only screen and (max-width: 480px){
